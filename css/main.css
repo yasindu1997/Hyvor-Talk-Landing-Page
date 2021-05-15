@@ -30,6 +30,34 @@ section{
     padding-bottom: 2rem;
 }
 
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    border-radius: 5rem;
+    background:linear-gradient(90deg,#ffd969,#2c3e50);
+    font-size: 1.7rem;
+    color:#fff;
+    cursor: pointer;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    transition: all .3s linear;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.heading{
+    text-align: center;
+    background:var(--gradient);
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding:1rem;
+}
+
 /* header section styles start*/
 
 header{
@@ -63,7 +91,51 @@ header .navbar a{
 }
 
 header .navbar a:hover{
-    color:#f1c40f;
+    color:#ffd969;
 }
 
 /* header section styles ends*/
+
+/* home styles start */
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url(../asset/home-background.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .image img{
+    width:40vw;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-3.5rem);
+    }
+}
+
+.home .content h3{
+    font-size: 5.5rem;
+    color:#333;
+    text-transform: uppercase;
+}
+
+.home .content h3 span{
+    color:#ffd969;
+    text-transform: uppercase;
+}
+
+.home .content p{
+    font-size: 1.7rem;
+    color:#666;
+    padding:1rem 0;
+}
+
+/* home styles end */
